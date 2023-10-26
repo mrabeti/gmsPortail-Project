@@ -1,5 +1,5 @@
 <template>
-<form name="PAGE_INDEX" action="https://www.gmsportail.com/PortailGMS/Page_index/vBQAAMRyo$8IAICwjjD0c02gsV0" target="_self" onsubmit="return clWDUtil.pfGetTraitement('PAGE_INDEX',18,void 0)(event); " method="post">
+<form name="PAGE_INDEX" action="../src/images/logo.png" target="_self" onsubmit="return clWDUtil.pfGetTraitement('PAGE_INDEX',18,void 0)(event); " method="post">
 	<div class="h-0">
 		<input type="hidden" name="WD_JSON_PROPRIETE_" value="{&quot;m_oProprietesSecurisees&quot;:{}}"/>
 		<input type="hidden" name="WD_BUTTON_CLICK_" value="A26">
@@ -85,7 +85,7 @@
 														</div>
 														<div  class="pos16">
 															<div  class="pos17">
-																<a href="javascript:_JCL(clWDUtil.sGetPageActionIE10()+'?A8','_self','','')" id="A8" class="l-2 wblienHorsZTR bbox padding" style="display:inline-block;">Connexion</a>
+																<a  @click="goToLogin" id="A8" class="l-2 wblienHorsZTR bbox padding" style="display:inline-block;">Connexion</a>
 															</div>
 														</div>
 													</div>
@@ -936,39 +936,16 @@
 </template>
 
 
-<script>
 
+<script>
 export default {
     name : 'MasterComponent',
+	method: {
+		goToLogin(){
+			this.$router.push("/login")
+		}
+	}
 };
-</script>
-<script  type="text/javascript">
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJ4X3Bjc29mdF9ub21fbG9naXF1ZSI6IlBhZ2VfaW5kZXgiLCJ4X3Bjc29mdF90eXBlX2xvZ2lxdWUiOiI2NTUzOCIsInhfcGNzb2Z0X2lkX2Vuc2VtYmxlIjoiNDg2NjA1MjI1Njc4MjQ3MTM5MiIsIm1hcHBpbmdzIjoiQSJ9
-var _WD_="PORTAILGMS_WEB/index.html";var _NA_=5;var _WW_SEPMILLIER_=" ";var _WW_SEPDECIMAL_=",";var _PAGE_=document["PAGE_INDEX"];clWDUtil.DeclareClones({});clWDUtil.DeclareChamp("A9",void 0,void 0,void 0,WDImage,[ {"m_nTemporisation":200},{"m_tabImages":[{"m_sSrc":"ext/imagesSlide/1.jpg"},{"m_sSrc":"ext/imagesSlide/10.jpg"},{"m_sSrc":"ext/imagesSlide/2.jpg"},{"m_sSrc":"ext/imagesSlide/3.jpg"},{"m_sSrc":"ext/imagesSlide/4.jpg"},{"m_sSrc":"ext/imagesSlide/5.jpg"},{"m_sSrc":"ext/imagesSlide/6.jpg"},{"m_sSrc":"ext/imagesSlide/7.jpg"},{"m_sSrc":"ext/imagesSlide/8.jpg"},{"m_sSrc":"ext/imagesSlide/9.jpg"}],"m_bActif":true,"m_nImage":0}],true,true);
-function CompoWeb1(){return clWDUtil.pfGetTraitement("A19",72,void 0).apply(this,[window["event"]].concat(Array.prototype.slice.call(arguments)));};clWDUtil.DeclareChamp("A15",void 0,void 0,void 0,WDOnglet,[3,0,["l-11","l-12"]],true,true);clWDUtil.DeclareChamp("A22",void 0,void 0,void 0,WDSaisie,["votre Nom",void 0,void 0],true,true);clWDUtil.DeclareChamp("A23",void 0,void 0,void 0,WDSaisie,["votre numéro de téléphone",void 0,void 0],true,true);clWDUtil.DeclareChamp("A24",void 0,void 0,void 0,WDSaisie,["votre adresse email",void 0,void 0],true,true);clWDUtil.DeclareChamp("A25",void 0,void 0,void 0,WDSaisie,["votre Message",void 0,void 0],true,true);clWDUtil.DeclareChamp("A27",void 0,void 0,void 0,WDSaisie,["sujet de votre message",void 0,void 0],true,true);;
-var _COL={9:"#fff9c4",66:"#424242"};
-function _SET_A9_6(){_JGEN("A9",document,false,false).src=sAnimationJoueSurImage(clWDUtil.sGetCheminImage(arguments[0]),_JGEN("A9",document,false,false),clWDUtil.oConversionType(_JGEN("A9",document,false,false).src,16,0,16,0),clWDUtil.nGetOpacite(clWDUtil.oGetCurrentStyleIdName("A9",document,false,false,false).opacity,_JGEN("A9",document,false,false)),31,0,100,"A9");}
-function _SET_A9_6_S(){NSPCS.NSChamps.oGetPageCourante().viGetChamp("A3",39,{}).viGetChamp("A9",22,{}).viGetPropriete(1,6).vSetValeur(arguments[0],0,{});}
-function _GET_A24_1(){return WDChamp.prototype.s_oGetSetProp(document.getElementsByName("A24")[0].value,document.getElementsByName("A24")[0],oGetObjetChamp("A24"),(typeof event==="undefined")?null:event,false,1);}
-function _SET_A24_1(){document.getElementsByName("A24")[0].value=WDChamp.prototype.s_oGetSetProp(arguments[0],document.getElementsByName("A24")[0],oGetObjetChamp("A24"),(typeof event==="undefined")?null:event,true,1);}
-function _GET_A22_1(){return WDChamp.prototype.s_oGetSetProp(document.getElementsByName("A22")[0].value,document.getElementsByName("A22")[0],oGetObjetChamp("A22"),(typeof event==="undefined")?null:event,false,1);}
-function _SET_A22_1(){document.getElementsByName("A22")[0].value=WDChamp.prototype.s_oGetSetProp(arguments[0],document.getElementsByName("A22")[0],oGetObjetChamp("A22"),(typeof event==="undefined")?null:event,true,1);}
-function _GET_A23_1(){return WDChamp.prototype.s_oGetSetProp(document.getElementsByName("A23")[0].value,document.getElementsByName("A23")[0],oGetObjetChamp("A23"),(typeof event==="undefined")?null:event,false,1);}
-function _SET_A23_1(){document.getElementsByName("A23")[0].value=WDChamp.prototype.s_oGetSetProp(arguments[0],document.getElementsByName("A23")[0],oGetObjetChamp("A23"),(typeof event==="undefined")?null:event,true,1);}
-clWDUtil.DeclareTraitementEx("PAGE_INDEX",true,[15,function(event){clWDUtil.pfGetTraitement("PAGE_INDEX",15,"_COM")(event);var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}},void 0,true,18,function(event){window.NSPCS&&NSPCS.NSChamps.ms_oSynchronisationServeur.OnSubmit();try{oGetObjetChamp("A27").OnSubmit(event);}catch(_E){}try{oGetObjetChamp("A25").OnSubmit(event);}catch(_E){}try{oGetObjetChamp("A24").OnSubmit(event);}catch(_E){}try{oGetObjetChamp("A23").OnSubmit(event);}catch(_E){}try{oGetObjetChamp("A22").OnSubmit(event);}catch(_E){}NSPCS.NSChamps.oGetChamp("A19",121,{}).vOnSubmit(event);return true;},void 0,true]);
-clWDUtil.DeclareTraitementEx("A19",false,[15,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);try{clWDUtil.Try();{NSPCS.NSUtil.pfGetTraitementCodeAffectation(clWDUtil.pfGetTraitement("A19",74,void 0),"A19",121,{})(event);void 0;}}catch(_E){clWDUtil.xbCatchThrow(_E,event);return;}finally{clWDUtil&&clWDUtil.oFinally();}},void 0,true,18,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);try{clWDUtil.Try();{NSPCS.NSUtil.pfGetTraitementCodeAffectation(clWDUtil.pfGetTraitement("A19",73,void 0),"A19",121,{})(event);void 0;}}catch(_E){return clWDUtil.xbCatchThrow(_E,event);}finally{clWDUtil&&clWDUtil.oFinally();}},void 0,true]);
-clWDUtil.DeclareTraitementEx("A22",false,[10,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}oGetObjetChamp("A22").OnBlur(event);},void 0,true,12,function(event){oGetObjetChamp("A22").OnFocus(event);var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}},void 0,true]);
-clWDUtil.DeclareTraitementEx("A23",false,[10,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}oGetObjetChamp("A23").OnBlur(event);},void 0,true,12,function(event){oGetObjetChamp("A23").OnFocus(event);var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}},void 0,true]);
-clWDUtil.DeclareTraitementEx("A24",false,[10,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}oGetObjetChamp("A24").OnBlur(event);},void 0,true,12,function(event){oGetObjetChamp("A24").OnFocus(event);var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}},void 0,true]);
-clWDUtil.DeclareTraitementEx("A25",false,[10,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}oGetObjetChamp("A25").OnBlur(event);},void 0,true,12,function(event){oGetObjetChamp("A25").OnFocus(event);var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}},void 0,true]);
-clWDUtil.DeclareTraitementEx("A26",false,[0,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);try{clWDUtil.Try();{__VARS0.DeclareVariable(0,NSPCS.NSTypes.iGetDescription(1),true,0);__VARS0.DeclareVariable(1,NSPCS.NSTypes.iGetDescription(16));__VARS0.DeclareVariable(2,NSPCS.NSTypes.iGetDescription(16));__VARS0.DeclareVariable(3,NSPCS.NSTypes.iGetDescription(16),NSPCS.NSChamps.oGetChamp("A24",2,{}),0);__VARS0.oGetVariable(1).vSetValeur(_EC(NSPCS.NSValues.oAny2RValue(NSPCS.NSChamps.oGetChamp("A24",2,{})),1,"@",0),0,{});__VARS0.oGetVariable(2).vSetValeur(_EC(NSPCS.NSValues.oAny2RValue(NSPCS.NSChamps.oGetChamp("A24",2,{})),2,"@",0),0,{});if(NSPCS.NSOperations.bComparaison(ChaineOccurrence(NSPCS.NSValues.oAny2Natif(__VARS0.oGetVariable(3)),"@",0),1,true,true,false,false)){__VARS0.oGetVariable(0).vSetValeur(false,0,{});}if(NSPCS.NSOperations.bComparaison(ChaineOccurrence(NSPCS.NSValues.oAny2Natif(__VARS0.oGetVariable(3))," ",0),0,false,false,false,true)){__VARS0.oGetVariable(0).vSetValeur(false,0,{});}if(NSPCS.NSOperations.bComparaison(ChaineOccurrence(NSPCS.NSValues.oAny2Natif(__VARS0.oGetVariable(3)),".",0),1,false,false,false,false)){__VARS0.oGetVariable(0).vSetValeur(false,0,{});}if(NSPCS.NSOperations.oLogique(1,NSPCS.NSOperations.bComparaison(clWDUtil.sSupprimeEspacesDebutFin(NSPCS.NSValues.oAny2Natif(__VARS0.oGetVariable(3))),"",true,false,false,false),NSPCS.NSOperations.bComparaison(clWDUtil.sSupprimeEspacesDebutFin(NSPCS.NSValues.oAny2Natif(__VARS0.oGetVariable(1))),"",true,false,false,false))){__VARS0.oGetVariable(0).vSetValeur(false,0,{});}__VARS0.DeclareVariable(4,NSPCS.NSTypes.iGetDescription(16),_EC(NSPCS.NSValues.oAny2RValue(__VARS0.oGetVariable(2)),-2147483648,".",0),0);if(NSPCS.NSOperations.oLogique(1,NSPCS.NSOperations.bComparaison(clWDUtil.sSupprimeEspacesDebutFin(NSPCS.NSValues.oAny2Natif(__VARS0.oGetVariable(4))),"",true,false,false,false),NSPCS.NSOperations.bComparaison(__VARS0.oGetVariable(4),"\b",true,false,false,false))){__VARS0.oGetVariable(0).vSetValeur(false,0,{});}if(NSPCS.NSOperations.oUnaire(0,__VARS0.oGetVariable(0))){NSPCS.NSOperations.Info("Le mail est invalide. Veuillez corriger votre mail.");return;}if(NSPCS.NSOperations.bComparaison(NSPCS.NSChamps.oGetChamp("A22",2,{}),"",true,false,false,false)){NSPCS.NSOperations.Info("Veuillez renseigner votre nom");return;}if(NSPCS.NSOperations.bComparaison(NSPCS.NSChamps.oGetChamp("A23",2,{}),"",true,false,false,false)){NSPCS.NSOperations.Info("Veuillez renseigner votre Numéro de téléphone");return;}void 0;}}catch(_E){clWDUtil.xbCatchThrow(_E,event);return;}finally{clWDUtil&&clWDUtil.oFinally();}if(clWDUtil.pfGetTraitement("PAGE_INDEX",18,void 0)()){_JSL(_PAGE_,"A26","_self","","");}},void 0,true]);
-clWDUtil.DeclareTraitementEx("A27",false,[10,function(event){var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}oGetObjetChamp("A27").OnBlur(event);},void 0,true,12,function(event){oGetObjetChamp("A27").OnFocus(event);var __VARS0=new NSPCS.NSValues.CVariablesLocales(0,0);{void 0;}},void 0,true]);
-clWDUtil.DeclareTraitementEx("PAGE_INDEX",true,[15,function(event){clWDUtil.DeclareChampInit();window.chfocus&&chfocus();clWDUtil.pfGetTraitementAvecAppelClones("A19",15,void 0)(event);},"_COM",false,16,function(event){},"_COM",false]);
-
-if (window["_gtabPostTrt"]!==undefined){for(var i=window["_gtabPostTrt"].length-1; i>-1; --i){var domCible = window["_gtabPostTrt"][i].cible;for(pcode in window["_gtabPostTrt"][i].pcode){var tmp=domCible[pcode.toString()]; var f = window["_gtabPostTrt"][i].pcode[pcode];  domCible[pcode.toString()] = function() { if (tmp) tmp.apply(this,arguments); return f.apply(this,arguments); };if (pcode.toString()=='onload'){if (domCible.complete || domCible.getAttribute("data-onload-posttrt")=="true") domCible[pcode.toString()]();domCible.removeAttribute("data-onload-posttrt");}}}}
-
-var _bTable16_=false;
 </script>
 
 
